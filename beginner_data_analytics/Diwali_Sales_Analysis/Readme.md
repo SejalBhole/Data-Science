@@ -37,13 +37,25 @@ The analysis includes:
 *   **Google Colab / Jupyter Notebook**
     
 
-📂 Dataset Description
-----------------------
+## 📂 Dataset Description
 
 The dataset contains customer transaction details with the following features:
 
-Column NameDescriptionUser\_IDUnique customer IDCust\_nameCustomer nameProduct\_IDProduct identifierGenderCustomer genderAge GroupAge categoryAgeCustomer ageMarital\_StatusMarital status (0/1)StateCustomer stateZoneGeographical zoneOccupationCustomer occupationProduct\_CategoryCategory of product purchasedOrdersNumber of ordersAmountPurchase amount
-
+| Column Name        | Description                              |
+|--------------------|------------------------------------------|
+| User_ID            | Unique customer ID                       |
+| Cust_name          | Customer name                            |
+| Product_ID         | Product identifier                       |
+| Gender             | Customer gender                          |
+| Age Group          | Age category                             |
+| Age                | Customer age                             |
+| Marital_Status     | Marital status (0 = Single, 1 = Married) |
+| State              | Customer state                           |
+| Zone               | Geographical zone                        |
+| Occupation         | Customer occupation                      |
+| Product_Category   | Category of product purchased            |
+| Orders             | Number of orders                         |
+| Amount             | Purchase amount                          |
 🧹 Data Preprocessing
 ---------------------
 
@@ -62,10 +74,13 @@ The following preprocessing steps were performed:
 *   Verified dataset structure using .info() and .describe()
     
 
-Example:
+### 🧹 Data Cleaning Example (Python)
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   df.drop(['Status', 'unnamed1'], axis=1, inplace=True)  df.dropna(inplace=True)  df['Amount'] = df['Amount'].astype(int)   `
-
+```python
+df.drop(['Status', 'unnamed1'], axis=1, inplace=True)
+df.dropna(inplace=True)
+df['Amount'] = df['Amount'].astype(int)
+```
 📊 Exploratory Data Analysis
 ----------------------------
 
@@ -126,13 +141,22 @@ Food category generates the highest revenue.
 📈 Data Visualization
 ---------------------
 
-Visualizations were created using:
+Visualizations were created using Seaborn:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   sns.countplot()  sns.barplot()  sns.set(rc={'figure.figsize': (15,5)})   `
+```python
+import seaborn as sns
 
-Bar labels were added for clarity:
+sns.set(rc={'figure.figsize': (15,5)})
+sns.countplot()
+sns.barplot()
+```
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   for bars in ax.containers:      ax.bar_label(bars)   `
+### 🏷 Adding Bar Labels for Clarity
+
+```python
+for bars in ax.containers:
+    ax.bar_label(bars)
+```
 
 🔍 Key Business Insights
 ------------------------
@@ -151,7 +175,13 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 🚀 Project Highlights
 ---------------------
 
-✔ Clean and structured data analysis workflow✔ Practical implementation of Pandas operations✔ Professional data visualization✔ Real-world business insight extraction✔ Suitable for portfolio and placement interviews
+## ✅ Key Highlights
+
+✔ Clean and structured data analysis workflow  
+✔ Practical implementation of Pandas operations  
+✔ Professional data visualization  
+✔ Real-world business insight extraction  
+✔ Suitable for portfolio and placement interviews  
 
 📌 Future Enhancements
 ----------------------
@@ -178,17 +208,5 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 👩‍💻 Author
 ------------
 
-**Sejal Pravin Bhole**B.Tech Computer EngineeringMERN Stack Developer | Data Analysis Enthusiast
-
-If you want, I can also generate:
-
-*   🔥 A very attractive GitHub version with badges
-    
-*   📌 Resume project description (3–4 lines)
-    
-*   🎯 Interview explanation script
-    
-*   📁 Proper project folder structure
-    
-
-Just tell me 😊
+**Sejal Pravin Bhole**
+B.Tech Computer EngineeringMERN Stack Developer | Data Analysis Enthusiast
