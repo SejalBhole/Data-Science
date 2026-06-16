@@ -27,11 +27,9 @@ The dashboard was created using Microsoft Excel with Pivot Tables, Pivot Charts,
 
 >
 
-```md
-![Dashboard Preview](dashboard.png)
-```
+## Dashboard Preview
 
----
+![Dashboard Preview](dashboard.png)
 
 ## Key Insights
 
