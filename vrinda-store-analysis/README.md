@@ -25,7 +25,7 @@ The dashboard was created using Microsoft Excel with Pivot Tables, Pivot Charts,
 
 ## Dashboard Preview
 
-> Save your dashboard screenshot as `dashboard.png` inside this folder.
+>
 
 ```md
 ![Dashboard Preview](dashboard.png)
